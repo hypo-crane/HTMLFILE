@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Egypt Explorer | Student Travel</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5ead7;
+            color: #2d1b0e;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            background-image:
+                linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+                url("https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 8px black;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #d89b32;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #b87918;
+        }
+
+        /* GENERAL SECTIONS */
+        section {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #7a481c;
+        }
+
+        section > p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        /* PLACES */
+        .places {
+            background: #fff8ec;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card {
+            width: 280px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #8b531e;
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+
+        /* STUDENT TIPS */
+        .tips {
+            background: #2f2117;
+            color: white;
+        }
+
+        .tips h2 {
+            color: #e6b75a;
+        }
+
+        .tip-box {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        .tip {
+            background: #463123;
+            padding: 25px;
+            width: 220px;
+            border-radius: 15px;
+        }
+
+        .tip h3 {
+            color: #e6b75a;
+            margin-bottom: 10px;
+        }
+
+        /* ITINERARY */
+        .day {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-left: 6px solid #d89b32;
+            text-align: left;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .day h3 {
+            color: #8b531e;
+            margin-bottom: 8px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #160f0a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer span {
+            color: #e6b75a;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+
+        <div class="hero-content">
+
+            <h1>🇪🇬 EGYPT EXPLORER</h1>
+
+            <p>
+                Discover the land of pyramids, pharaohs and ancient mysteries.
+            </p>
+
+            <a href="#places" class="button">
+                Explore Egypt
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- ABOUT -->
+    <section>
+
+        <h2>Why Egypt?</h2>
+
+        <p>
+            Egypt is a perfect destination for students who love history,
+            adventure and discovering new cultures. From the legendary
+            Pyramids of Giza to the beautiful Nile River, every place has
+            a story waiting to be explored.
+        </p>
+
+    </section>
+
+
+    <!-- PLACES -->
+    <section class="places" id="places">
+
+        <h2>Must Visit Places</h2>
+
+        <p>
+            Add these amazing places to your Egypt travel list!
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+
+                    <h3>🏜️ Pyramids of Giza</h3>
+
+                    <p>
+                        Stand in front of one of the world's most famous
+                        ancient wonders.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+
+                    <h3>🌊 Nile River</h3>
+
+                    <p>
+                        Experience the legendary river that shaped
+                        Egyptian civilization.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+
+                    <h3>🏛️ Ancient Egypt</h3>
+
+                    <p>
+                        Explore temples, monuments and the fascinating
+                        history of the Pharaohs.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STUDENT TIPS -->
+    <section class="tips">
+
+        <h2>🎒 Student Travel Tips</h2>
+
+        <div class="tip-box">
+
+            <div class="tip">
+                <h3>💰 Budget</h3>
+                <p>
+                    Plan your expenses and keep some extra money for souvenirs.
+                </p>
+            </div>
+
+            <div class="tip">
+                <h3>💧 Stay Hydrated</h3>
+                <p>
+                    Keep drinking water, especially while exploring outdoor sites.
+                </p>
+            </div>
+
+            <div class="tip">
+                <h3>📸 Capture Memories</h3>
+                <p>
+                    Take pictures, but don't forget to actually enjoy the place.
+                </p>
+            </div>
+
+            <div class="tip">
+                <h3>🗺️ Plan Ahead</h3>
+                <p>
+                    Make a simple itinerary so you don't waste your precious trip time.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ITINERARY -->
+    <section>
+
+        <h2>🗓️ 3-Day Student Itinerary</h2>
+
+        <div class="day">
+            <h3>Day 1 | Cairo</h3>
+            <p>
+                Visit the Pyramids of Giza, the Great Sphinx and explore Cairo.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 2 | History & Culture</h3>
+            <p>
+                Explore ancient Egyptian monuments, museums and local markets.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 3 | Nile Adventure</h3>
+            <p>
+                Enjoy the Nile, explore the city and collect unforgettable memories.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            Made with ❤️ by <span>Egypt Explorer</span>
+        </p>
+
+        <p>
+            Explore. Learn. Discover. 🌍
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
